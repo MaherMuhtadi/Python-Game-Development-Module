@@ -111,5 +111,6 @@ $ python -m pip --version
 3. Import the file into the python scripts that need to use the module.
 
 For a demonstration of its usage, check out my [Snake Game](https://github.com/MaherMuhtadi/Snake-Game).
+
 ---
 Last Updated: December 29, 2022
