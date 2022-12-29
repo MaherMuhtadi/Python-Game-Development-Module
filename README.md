@@ -109,5 +109,7 @@ $ python -m pip --version
 1. Download the repository as a ZIP or [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository to your local device.
 2. Copy `game_module.py` to the root folder of your game project.
 3. Import the file into the python scripts that need to use the module.
+
+For a demonstration of its usage, check out my [Snake Game](https://github.com/MaherMuhtadi/Snake-Game).
 ---
 Last Updated: December 29, 2022
