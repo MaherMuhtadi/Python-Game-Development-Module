@@ -1,4 +1,8 @@
+<div align="center">
+
 # Python Game Development Module
+
+</div>
 
 ## Description
 This is a 2-D Game Development Module written in Python using the [PyGame](https://www.pygame.org/docs/) library. I created this module to define common and useful methods and attributes, encapsulated into _sprite_ class and _game_ class, for a simple game development experience.
