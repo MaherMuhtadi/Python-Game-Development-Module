@@ -47,7 +47,7 @@ hitbox = mouse.rectangle(width=32, height=32)
 # Resets the sprite to original coordinates and skin
 mouse.reset()
 ```
-4. The _game_ class contains methods to add sprites to the game.
+4. The _game_ class contains a method to add sprites to the game.
 ```py
 mouse_game.add_entity(mouse)
 ```
@@ -85,6 +85,8 @@ mouse_game.run()
 ```
 8. Both classes contain attributes that can be used to retrieve information about the game and sprites.
 
+For more information, look inside the module file.
+
 ## Installation
 
 ### Prerequisites
@@ -104,4 +106,4 @@ $ python -m pip --version
 2. Copy `game_module.py` to the root folder of your game project.
 3. Import the file into the python scripts that need to use the module.
 ---
-Last Updated: December 28, 2022
+Last Updated: December 29, 2022
