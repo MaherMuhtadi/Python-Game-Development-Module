@@ -6,8 +6,9 @@ This is a 2-D Game Development Module written in Python using the [PyGame](https
 ### Features
 1. Contains a _game_ class that can create a game window.
 ```py
-#Creating the mouse game
 from game_module import *
+
+#Creating the mouse game
 mouse_game = game(title="mouse",
                   window_size=(560, 560),
                   color=(0, 0, 0),
@@ -27,16 +28,22 @@ mouse = sprite(image_path=r"images\mouse.png",
 ```py
 # Repositions the sprite to (0,0) coordinates on the window
 mouse.update_position(new_x=0, new_y=0)
+
 # Moves the sprite to the left by 1 pixel
 mouse.change_postion(x_change=-1, y_change=0)
+
 # Stores a skin for the sprite
 mouse.add_image(key="bonus", image_path=r"images\bonus.png")
+
 # Changes the skin of the sprite
 mouse.change_image(key="bonus")
+
 # Resets the skin of the sprite
 mouse.change_image(key="default")
+
 # Returns a hitbox of size 32x32 px
 hitbox = mouse.rectangle(width=32, height=32)
+
 # Resets the sprite to original coordinates and skin
 mouse.reset()
 ```
@@ -46,29 +53,36 @@ mouse_game.add_entity(mouse)
 ```
 5. The _game_ class contains a decorator method to add task functions to the game. These functions are called during every frame of the game (each iteration of the game loop).
 ```py
-# call move_mouse() every iteration of the game loop
 def move_mouse():
     '''moves mouse left by 1px'''
     mouse.change_postion(x_change=-1, y_change=0)
+
+# call move_mouse() every iteration of the game loop
 mouse_game.add_task(move_mouse)
 ```
 6. Similar methods exist for adding event tasks and end tasks.
 ```py
-# call down_key_action(event) with each pygame event in every iteration of the game loop
 def down_key_action(event):
     '''moves down when down key is pressed'''
     if event.type == pygame.KEYDOWN:
         mouse.change_postion(x_change=0, y_change=5)
+
+# call down_key_action(event) with each pygame event in every iteration of the game loop
 mouse_game.add_event_task(down_key_action)
-# call save_score() when the game is quit
+
 def save_score():
     '''saves score to an external file'''
     saved_record = open("score.txt", "w")
     saved_record.write(str(score))
     saved_record.close()
+
+# call save_score() when the game is quit
 mouse_game.add_end_task(save_score)
 ```
 7. The _game_ class contains a `run` method to start the game (run the game loop).
+```py
+mouse_game.run()
+```
 8. Both classes contain attributes that can be used to retrieve information about the game and sprites.
 
 ## Installation
