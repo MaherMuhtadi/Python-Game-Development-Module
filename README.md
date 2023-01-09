@@ -16,15 +16,15 @@ from game_module import *
 mouse_game = game(title="mouse",
                   window_size=(560, 560),
                   color=(0, 0, 0),
-                  background_path=r"images\background.png",
-                  icon_path=r"images\icon.ico",
-                  bg_music_path=r"audio\music.mp3",
+                  background_path=r"images/background.png",
+                  icon_path=r"images/icon.ico",
+                  bg_music_path=r"audio/music.mp3",
                   fps=10)
 ```
 2. Contains a _sprite_ class that creates a game sprite.
 ```py
 # Creating a mouse sprite for the game
-mouse = sprite(image_path=r"images\mouse.png",
+mouse = sprite(image_path=r"images/mouse.png",
                initial_x=384,
                initial_y=264,)
 ```
@@ -37,7 +37,7 @@ mouse.update_position(new_x=0, new_y=0)
 mouse.change_postion(x_change=-1, y_change=0)
 
 # Stores a skin for the sprite
-mouse.add_image(key="bonus", image_path=r"images\bonus.png")
+mouse.add_image(key="bonus", image_path=r"images/bonus.png")
 
 # Changes the skin of the sprite
 mouse.change_image(key="bonus")
