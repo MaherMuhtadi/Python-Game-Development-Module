@@ -113,4 +113,4 @@ $ python -m pip --version
 For a demonstration of its usage, check out my [Snake Game](https://github.com/MaherMuhtadi/Snake-Game).
 
 ---
-Last Updated: December 29, 2022
+Last Updated: January 09, 2023
